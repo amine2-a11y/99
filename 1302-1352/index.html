@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" manifest="cache.appcache">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Amine PS4 PS4</title>
+<link rel="stylesheet" href="../theme.css">
+<link rel="stylesheet" href="../unified-theme.css">
+<style>
+html,body{width:100%;height:100%;margin:0;overflow:hidden}
+body{background:#050914 url("background.jpg") center/cover no-repeat fixed!important}
+.page{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:7vh 16px 3vh}
+.brand{font-size:11px;letter-spacing:.28em;color:#9db8d8;margin-bottom:10px;text-align:center}
+.title{margin:0 0 6px;text-align:center;font-size:clamp(22px,3.2vw,34px);font-weight:800;letter-spacing:.08em}
+.title b{color:#8fc8ff}
+.sub{font-size:11px;color:#8fa6be;text-align:center;margin-bottom:18px}
+.panel{width:min(680px,92vw);padding:20px;border:1px solid rgba(115,170,255,.24);border-radius:14px;background:rgba(2,8,17,.78);box-shadow:0 14px 40px rgba(0,0,0,.42)}
+#state{font-size:20px;font-weight:700;margin-bottom:10px}
+#out{white-space:pre-wrap;font:12px/1.5 Consolas,monospace;color:#e9f2ff;max-height:52vh;overflow:auto}
+.ok{color:#bfe7ff}.bad{color:#ffb4aa}.warn{color:#ffe39a}
+.spinner{width:34px;height:34px;margin:8px auto 14px;border:3px solid rgba(143,200,255,.18);border-top-color:#8fc8ff;border-radius:50%;animation:spin .8s linear infinite}
+body.done .spinner{display:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+
+<style id="offline-bg-fix">html,body{min-height:100%;background-color:#050914!important;}body{background-image:url("background.jpg")!important;background-position:center center!important;background-size:cover!important;background-repeat:no-repeat!important;background-attachment:fixed!important;}</style>
+</head>
+<body>
+<div class="page">
+  <div class="brand">OFFLINE PS4 PROJECT</div>
+  <h1 class="title">AMINE PS4 <b>PS4</b></h1>
+  <div class="sub">13.02 · 13.50 · 13.52 · Exact local cache</div>
+  <div class="spinner"></div>
+  <div class="panel">
+    <div id="state">Starting...</div>
+    <div id="out"></div>
+  </div>
+</div>
+<script type="module">
+import "./jb.js?v=11";
+</script>
+</body>
+</html>
